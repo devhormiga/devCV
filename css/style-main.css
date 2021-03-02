@@ -347,6 +347,17 @@ main{
     flex-wrap: nowrap;
     flex-basis: auto;
 }
+
+.img-content3{
+    display: block;
+}
+.img-content3 img{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+
 @media screen and (max-width:360px){
 
 
