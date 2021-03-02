@@ -1,0 +1,119 @@
+
+/*--Downner--*/
+@keyframes animate-title{
+    0% {
+        position:relative;
+        top: -300px;
+    }
+    50%{
+        position:relative;
+        top: 20px;
+    }
+    75%{
+        position:relative;
+        top: 18px;
+    }
+  
+
+    100%{
+        position:relative;
+        top: 0px;
+}
+}
+
+
+
+/*--to-turn-right--*/
+
+@keyframes to-turn-right{
+
+    0%{
+        /**/
+        position: relative;
+        left: -200%;
+        transform: rotateZ(0deg);
+    }       
+
+  
+
+    
+    100%{
+        /**/
+        position: relative;
+        left: 0px;
+        transform: rotateZ(360deg);
+
+        
+    }
+}
+
+
+
+/*--to-turn-left--*/
+
+@keyframes to-turn-left{
+
+    0%{
+        /**/
+        position: relative;
+        left: 200%;
+        transform: rotateZ(0deg);
+    }       
+
+  
+
+    
+    100%{
+        /**/
+        position: relative;
+        left: 0px;
+        transform: rotateZ(-360deg);
+
+        
+    }
+}
+
+
+@keyframes rotate{
+    /*rotate elemente in his axis*/
+    0%{
+        /**/
+        
+        transform: rotateZ(0deg);
+    }       
+
+  
+
+    
+    100%{
+        /**/
+        
+        transform: rotateZ(360deg);
+
+        
+    }
+
+
+}
+
+@keyframes flip-y{
+     /*flip elemente in his axis Y */
+     0%{
+        /**/
+        
+        transform: rotatey(0deg);
+    }       
+
+  
+
+    
+    100%{
+        /**/
+        
+        transform: rotatey(360deg);
+
+        
+    }
+
+
+}
