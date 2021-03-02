@@ -246,7 +246,8 @@ main{
     display: block;
     text-justify: inter-word;
     text-align: left;
-    
+    line-height: 30px;
+
 }
 
 .content2-skills div{
@@ -508,6 +509,7 @@ main{
         padding: 50px;
         overflow-y: auto;
         border-left: 10px solid #00adb5 ;
+        
     }
     .container-text h1{
         font-size: 30px;
@@ -573,6 +575,7 @@ main{
         text-justify: inter-word;
         text-align: left;
         justify-content: space-between;
+        line-height: 30px;
         
     }
 
@@ -583,5 +586,12 @@ main{
         padding: 30px;
         border-radius: 20px;
     }
-    
+    .img-content3{
+        display: flex;
+    }
+    .img-content3 img{
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+    }
 }
