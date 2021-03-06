@@ -688,6 +688,8 @@ main{
         height:100%;
         padding: 40px;
         margin: auto;
+        margin-top: auto;
+
         opacity: 70%;
         max-height: 300px;
         transition: 2s;
@@ -698,41 +700,52 @@ main{
         /*transform: rotatey(360deg);*/
         transform: scale(150%, 150%);
         opacity:unset ;
-        color: #000;
+        color: inherit;
+        text-shadow:  1px 1px 5px #f14084;
+        border: none;
+        background: none;
     }
 
     .item-stadistics:hover span {
-        color:#000;
+        color:inherit;
     }
 
     .content-stadistics span h4{
         margin-bottom: 40px;
     }
+
     .item1{
-        background: #81b214;
-        border-radius: 15px 15px 0px 0px;
-        
+        background: #000;
+        border: 5px double  #81b214;
+        border-radius: 15px 0px 0px 15px;
+        color: #81b214;
     }
 
     .item2{
-        background: #bfdcae;
+        background: #000;
+        border: 5px double  #bfdcae;
         border-radius: 0px;
     }
     .item3{
-        background: #00adb5;
+        background: #000;
+        border: 5px double  #00adb5;
+        color:#00adb5;
     }
     .item4{
-        background: #f14084;
+        background: #000;
+        border: 5px double  #f14084;
+        color: #f14084;
     }
     .item5{
-        background: #3e7e72;
-        border-radius:  0px 0px 15px 15px;
+        background: #000;
+        border: 5px double  #3e7e72;
+        color: #3e7e72;
+        border-radius:  0px 15px 15px 0px;
 
     }
 
     .content-stadistics span{
         font-size: 80px;
-        color: #ffffff;
     }
 
     .content-stadistics p {
@@ -742,16 +755,6 @@ main{
     }
    
 
-    .item1{
-        background: #81b214;
-        border-radius: 15px 0px  0px 15px;
-    }
-
-    .item5{
-        background: #3e7e72;
-        border-radius:  0px  15px 15px 0px;
-
-    }
 
     .content2-skills{
         display: flex;
