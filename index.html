@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,user-scaleble=no, initial-scale=1.0">
-    <title>Mobile Fisrt</title>
-    <link rel="stylesheet" type="text/css"  href="css/style-main.css">
+    <title>Dev Hormiga</title>
+    <link rel="stylesheet" type="text/css" id="fileStyle" href="css/style-main.css">
     <link rel="stylesheet" type="text/css"  href="icons/style.css">
     <link rel="stylesheet" type="text/css"  href="css/animations.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script type="text/javascript" src="js/obervers.js"></script>
+    <script type="text/javascript" src="js/teamChange.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"> 
 </head>
@@ -40,6 +42,7 @@
             <a href="#" class="btn-close-popup">X</a>
         </div>
     </div>
+    
     <div class="content-header">
         <div class="content-logo">
             <img src="images/hormiga.png">
@@ -49,8 +52,11 @@
             Desarrollo de pequeñas soluciones para tus proyectos
             <a href="https://github.com/devhormiga">GitHub</a>
         </p>
+       
     </div>    
-    
+    <div class="selecTeam">
+        <p id='currenTeam' onclick="changeTeam()" >Claro</p>
+    </div>
     <main>
         <div class="content1">
             <div class="img-content1">
@@ -141,7 +147,7 @@
                
             </div>
             <div class="content2-skills">
-                <div>
+                <div class="simpleCont">
                     
                         <ul>
                           <li>Mantenimiento de PC</li>
@@ -158,7 +164,7 @@
 
                 </div>
                 
-                <div>
+                <div class="simpleCont">
                     
                         <ul>
                           <li>Programación en Python- cinco años de
@@ -183,7 +189,7 @@
             </div>
         </div>
 
-        <div class="content1">
+        <div class="content1 orangeStyle">
             
             <div class="text-content1 ">
                 <h1> Y ahora qué...?</h1>
