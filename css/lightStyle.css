@@ -56,7 +56,7 @@ body {
 }
 
 .content-header a {
-    color: #81b214;
+    color: #fff;
     
 }
 .content-header{
@@ -69,17 +69,28 @@ body {
     /* ANIMATION */
     animation-name: animate-title;
     animation-duration: 5s;
+    background-color: #f0a70b;
+    border-radius: 0px 0px 30px 30px;
+
+    box-shadow:
+        0 1.2px 2.7px rgba(0, 0, 0, 0.084),
+        0 3px 6.4px rgba(0, 0, 0, 0.123),
+        0 5.6px 12px rgba(0, 0, 0, 0.154),
+        0 10.1px 21.4px rgba(0, 0, 0, 0.183),
+        0 18.8px 40.1px rgba(0, 0, 0, 0.217),
+        0 45px 96px rgba(0, 0, 0, 0.29)
+        ;
 }
 
 .content-logo{
     width: 150px;
     height: 150px;
     /*background: linear-gradient(180deg ,#81b214, #206a5d,#393e46);*/
-    background-color: #80b21449;
+    /*background-color: #80b21449;*/
     border-radius: 50%;
     overflow: hidden;
     margin: auto;
-    box-shadow: #81b214 2px 2px 20px;
+    color: #fff;
 
 }
 
@@ -89,7 +100,7 @@ body {
     height: 70%;
     object-fit:scale-down ;
     align-items: center;
-    filter: drop-shadow(0px 0px 5px #81b214);
+    filter: drop-shadow(1px 1px 1px #fff);
 }
 
 
@@ -128,9 +139,9 @@ main{
     height: 8px;
     margin: auto;
     border: none;
-    background: -webkit-linear-gradient(right,#81b214,#000000);
-    background: -moz-linear-gradient(right,#81b214,#000000);
-    background: -o-linear-gradient(right,#81b214,#000000);
+    background: -webkit-linear-gradient(right,#81b214,#ffffff);
+    background: -moz-linear-gradient(right,#81b214,#ffffff);
+    background: -o-linear-gradient(right,#81b214,#ffffff);
     margin-top: 20px;
 }
 
@@ -155,7 +166,7 @@ main{
 
 .content1 a {
     text-decoration: none;
-    color: #81b214;
+    color: #fff;
     font-weight: 100;
     font-size: 18px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -205,8 +216,9 @@ main{
 .button-more {
     width: 200px;
     padding:  16px;
-    border: 1px solid #81b214;
+    border: 1px solid #f0a70b;
     border-radius: 10px;
+    background-color: #f0a70b;
     margin: auto;
     margin-top: 40px;
     cursor: pointer;
@@ -569,6 +581,17 @@ main{
         /* ANIMATION */
         animation-name: animate-title;
         animation-duration: 5s;
+        background-color: #f0a70b;
+        border-radius: 0px 0px 30px 30px;
+
+        box-shadow:
+        0 1.2px 2.7px rgba(0, 0, 0, 0.084),
+        0 3px 6.4px rgba(0, 0, 0, 0.123),
+        0 5.6px 12px rgba(0, 0, 0, 0.154),
+        0 10.1px 21.4px rgba(0, 0, 0, 0.183),
+        0 18.8px 40.1px rgba(0, 0, 0, 0.217),
+        0 45px 96px rgba(0, 0, 0, 0.29)
+        ;
     }
     .content-logo{
         grid-row: 1 / 3;
