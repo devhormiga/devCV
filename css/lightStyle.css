@@ -539,8 +539,8 @@ main{
         overflow-y: auto;
         border:1px solid #81b214;
         border-radius: 10px;
-        background-color: rgb(0, 0, 0);
-        color:#FFF;
+        background-color: #fff;
+        color:#000;
     }
     .container-text h1{
         font-size: 30px;
@@ -564,6 +564,7 @@ main{
         line-height: 20px;
         padding: 20px;
         text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
 /*--fin popup--*/
@@ -717,7 +718,8 @@ main{
         margin-right: 20px;
         border-width: 1px 10px 1px 10px;
         border-style: solid;
-        border-color: #81b214;
+        border-color: #caa502;
+        filter:grayscale(100%);
 
         
     }
@@ -726,10 +728,10 @@ main{
         width: 60%;
         padding: 50px;
         overflow-y: auto;
-        border:1px solid #81b214;
+        border:1px solid #247207;
         border-radius: 10px;
-        background-color: rgb(0, 0, 0);
-        color:#FFF;
+        background-color: #fff;
+        color:#000;
         
     }
     .container-text h1{
