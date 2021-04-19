@@ -6,45 +6,80 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: all 1s;
+    z-index: 1000;
+
 }
 
-.selecTeam{
+
+.optionFloat{
+    width: 70px;
+    overflow: visible;
+
+    border: 1px solid #81b21465;
+    border-radius: 0px 50px 50px 0px;
     position: fixed;
-    display: flex;
+    top: 200px;
+    float: left;
+    display: block;
+    padding: 5px ;    
+    z-index: 1000;
+    background-color: #81b21465;
+
+    box-shadow: 11px 10px 24px -12px rgba(12, 228, 30, 0.411);
+    -webkit-box-shadow: 11px 10px 24px -12px rgba(12, 228, 30, 0.411);
+    -moz-box-shadow: 11px 10px 24px -12px rgba(12, 228, 30, 0.411);
+   transition:  border 1s;
+   
+   
+}
+
+.selecTeam {
+    
     width: 50px;
     height: 50px;
-    background: red;
+    border:1px solid #81b214;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    float: left;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
     overflow: hidden;
+    margin-left: 0px;
     padding: 4px;
-    background-color: #00adb5;
-    color: #00adb5;
+    background-color:none;
+    color: #80b21400;
     transition: all 2s;
     z-index: 1000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
+
 }
 
 
+.optionFloat:hover{
+    border-left:5px solid  #81b214;
+    padding-left: 0px;
+}
 .selecTeam:hover{
-    position: fixed;
-    display: flex;
-    width: 100px;
-    float: left;
+    border: none;
+    width: 150px;
+    max-width: 150px;
+    opacity: 100%;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
     padding: 4px;
-    background-color: #00adb5;
+    border-radius: 0px 101px 194px 0px / 0px 68px 150px 0px;    background-color: #247207;
     color: #fff;
-    border-radius: 0px;
     font-family: inherit;
+    box-shadow: 11px 10px 24px -12px rgba(160, 190, 24, 0.86);
+    -webkit-box-shadow: 11px 10px 24px -12px rgba(160, 190, 24, 0.86);
+    -moz-box-shadow: 11px 10px 24px -12px rgba(160, 190, 24, 0.86);
+    background-color: #81b214;
+    z-index: 1001;
 }
+
+
 
 body {
     /*background: #393e46;*/
@@ -460,7 +495,7 @@ main{
         background: #00000067;
         visibility: visible;
         opacity: 1;
-        z-index: 100;
+        z-index: 2000;
     }
 
     .btn-open-popup{
@@ -476,7 +511,17 @@ main{
         opacity: 0;
         transition: all 2s;
     }
-
+    .popBienvenida{ 
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        visibility: visible;
+        opacity: 100;
+        transition: all 1s;
+        z-index: 1005;
+        background-color: #393e46ad;
+        transition: all 1s;
+    }
     .popup{
         display: flex;
 
@@ -493,13 +538,18 @@ main{
     .img{
         width: 100%;
         height: 40%;
-        background-image: url('../images/die.jpeg');
         background-size: cover;
         background-position: center;
         border-radius: 10px;
         margin-bottom: 20px;
     }
+    .imgCV{
+        background-image: url('../images/die.jpeg');
 
+    }
+    .imgB{
+        background-image: url('../images/die2.jpg');
+    }
     .container-text{
         width: 100%;
         height: 60%;
@@ -539,43 +589,6 @@ main{
 @media screen and (min-width:680px){
         
     
-    .selecTeam{
-        position: fixed;
-        display: flex;
-        width: 50px;
-        height: 50px;
-        background: red;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-        float: left;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        padding: 4px;
-        background-color: #00adb5;
-        color: #00adb5;
-        transition: all 2s;
-        z-index: 1000;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 30px;
-    }
-
-
-    .selecTeam:hover{
-        position: fixed;
-        display: flex;
-        width: 100px;
-        float: left;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        padding: 4px;
-        background-color: #00adb5;
-        color: #fff;
-        border-radius: 0px;
-        font-family: inherit;
-    }
     .content-header{
         display:grid;
         grid-template-columns: repeat(3, fr);
@@ -649,7 +662,7 @@ main{
         background: #00000067;
         visibility: visible;
         opacity: 1;
-        z-index: 100;
+        z-index: 2000;
     }
 
     .btn-open-popup{
@@ -665,7 +678,17 @@ main{
         transition: all 2s;
         z-index: -100;
     }
-
+    .popBienvenida{ 
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        visibility: visible;
+        opacity: 100;
+        transition: all 1s;
+        z-index: 1005;
+        background-color: #393e46ad;
+        transition: all 1s;
+    }
     .popup{
         width: 100%;
         max-width: 800px;
@@ -681,7 +704,6 @@ main{
 
     .img{
         width: 40%;
-        background-image: url('../images/die.jpeg');
         background-size: cover;
         background-position: center;
         border-radius: 20px;
@@ -692,7 +714,13 @@ main{
 
         
     }
+    .imgCV{
+        background-image: url('../images/die.jpeg');
 
+    }
+    .imgB{
+        background-image: url('../images/die2.jpg');
+    }
     .container-text{
         width: 60%;
         padding: 50px;
